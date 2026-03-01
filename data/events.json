@@ -1,14 +1,569 @@
-[
-  {
-    "timestamp": "2026-02-28T20:41:39.000Z",
-    "entities": "Bybit",
-    "topic": "cyberattack",
-    "eventSummary": "Bybit has identified fraudulent behavior from an appeal applicant and is taking action against the account to maintain trading integrity and asset security.\nSources:\n- https://t.me/bybitukrainian"
+{
+  "lastUpdated": "2026-03-01T12:18:31.894Z",
+  "summary": {
+    "totalHacks90d": 29,
+    "totalLost90d": 150258900,
+    "totalReturned90d": 336000,
+    "netLost90d": 149922900,
+    "contagionScore": 0,
+    "marketSentiment": "bullish"
   },
-  {
-    "timestamp": "2026-02-28T12:38:15.000Z",
-    "entities": "GRIFFIN AI",
-    "topic": "cyberattack",
-    "eventSummary": "GRIFFIN AI is facing community criticism for failing to carry out a promised buyback as part of a compensation plan following a hack, while simultaneously withdrawing liquidity without clear explanation.\nSources:\n- https://t.me/GRIFFINai"
+  "market": {
+    "timestamp": "2026-03-01T12:18:31.894Z",
+    "topTokens": [
+      {
+        "symbol": "BTC",
+        "name": "Bitcoin",
+        "price": 66518,
+        "change24h": 4.00731,
+        "change7d": -2.458348917726384,
+        "marketCap": 1330117266403
+      },
+      {
+        "symbol": "ETH",
+        "name": "Ethereum",
+        "price": 1985.61,
+        "change24h": 6.08562,
+        "change7d": 0.2808851199266502,
+        "marketCap": 239713125452
+      },
+      {
+        "symbol": "USDT",
+        "name": "Tether",
+        "price": 0.999988,
+        "change24h": -0.01259,
+        "change7d": 0.02702649956360761,
+        "marketCap": 183634016784
+      },
+      {
+        "symbol": "BNB",
+        "name": "BNB",
+        "price": 622.53,
+        "change24h": 4.31833,
+        "change7d": -0.29876330655039757,
+        "marketCap": 84831138048
+      },
+      {
+        "symbol": "XRP",
+        "name": "XRP",
+        "price": 1.38,
+        "change24h": 6.26101,
+        "change7d": -3.3439245156330824,
+        "marketCap": 84094816094
+      },
+      {
+        "symbol": "USDC",
+        "name": "USDC",
+        "price": 0.999964,
+        "change24h": -0.00025,
+        "change7d": 0.009272948174858199,
+        "marketCap": 75191938228
+      },
+      {
+        "symbol": "SOL",
+        "name": "Solana",
+        "price": 85.25,
+        "change24h": 7.83484,
+        "change7d": 0.015365258010294149,
+        "marketCap": 48557869292
+      },
+      {
+        "symbol": "TRX",
+        "name": "TRON",
+        "price": 0.280954,
+        "change24h": 0.60946,
+        "change7d": -2.643665644063696,
+        "marketCap": 26619686815
+      },
+      {
+        "symbol": "FIGR_HELOC",
+        "name": "Figure Heloc",
+        "price": 1.029,
+        "change24h": -1.84536,
+        "change7d": -1.633142423092692,
+        "marketCap": 15913674381
+      },
+      {
+        "symbol": "DOGE",
+        "name": "Dogecoin",
+        "price": 0.093591,
+        "change24h": 5.13356,
+        "change7d": -3.8589192703299697,
+        "marketCap": 15805301290
+      },
+      {
+        "symbol": "WBT",
+        "name": "WhiteBIT Coin",
+        "price": 49.41,
+        "change24h": 2.97784,
+        "change7d": -2.679027728141066,
+        "marketCap": 10544119324
+      },
+      {
+        "symbol": "ADA",
+        "name": "Cardano",
+        "price": 0.278567,
+        "change24h": 5.76426,
+        "change7d": 0.8788466071287868,
+        "marketCap": 10248442225
+      },
+      {
+        "symbol": "USDS",
+        "name": "USDS",
+        "price": 0.99992,
+        "change24h": 0.01786,
+        "change7d": -0.005224310550624427,
+        "marketCap": 10099175812
+      },
+      {
+        "symbol": "BCH",
+        "name": "Bitcoin Cash",
+        "price": 447.33,
+        "change24h": 0.40563,
+        "change7d": -21.336948364808293,
+        "marketCap": 8932619579
+      },
+      {
+        "symbol": "LEO",
+        "name": "LEO Token",
+        "price": 9.14,
+        "change24h": 3.53205,
+        "change7d": 11.553772166967018,
+        "marketCap": 8358788305
+      },
+      {
+        "symbol": "HYPE",
+        "name": "Hyperliquid",
+        "price": 30.94,
+        "change24h": 13.35354,
+        "change7d": 4.183064979963512,
+        "marketCap": 7410064512
+      },
+      {
+        "symbol": "XMR",
+        "name": "Monero",
+        "price": 341.8,
+        "change24h": 4.57517,
+        "change7d": 5.8421731797854655,
+        "marketCap": 6302469153
+      },
+      {
+        "symbol": "LINK",
+        "name": "Chainlink",
+        "price": 8.89,
+        "change24h": 6.97138,
+        "change7d": 0.6679228788249856,
+        "marketCap": 6288356967
+      },
+      {
+        "symbol": "CC",
+        "name": "Canton",
+        "price": 0.165409,
+        "change24h": 2.03621,
+        "change7d": 3.429458689313078,
+        "marketCap": 6272018423
+      },
+      {
+        "symbol": "USDE",
+        "name": "Ethena USDe",
+        "price": 0.99924,
+        "change24h": -0.00628,
+        "change7d": 0.04026757787468105,
+        "marketCap": 6030643090
+      }
+    ],
+    "contagionScore": 0,
+    "marketSentiment": "bullish",
+    "avgChange24h": 3.6
+  },
+  "recentHacks": [
+    {
+      "timestamp": "2026-02-26T00:00:00.000Z",
+      "entity": "Ploutos Money",
+      "type": "Misconfigured Oracle Exploit",
+      "amountLost": 390000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Ploutos Money lost $390K via Misconfigured Oracle Exploit on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-23T00:00:00.000Z",
+      "entity": "DGLD",
+      "type": "Infinite Mint and Dump",
+      "amountLost": 0,
+      "chain": [
+        "Base"
+      ],
+      "summary": "DGLD lost $0 via Infinite Mint and Dump on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-22T00:00:00.000Z",
+      "entity": "Blend Pools V2",
+      "type": "Price Oracle Manipulation",
+      "amountLost": 10970000,
+      "chain": [
+        "Stellar"
+      ],
+      "summary": "Blend Pools V2 lost $11.0M via Price Oracle Manipulation on Stellar",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-21T00:00:00.000Z",
+      "entity": "IoTeX",
+      "type": "Private Key Compromised",
+      "amountLost": 8000000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "IoTeX lost $8.0M via Private Key Compromised on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Infrastructure",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-15T00:00:00.000Z",
+      "entity": "Moonwell Lending",
+      "type": "cbETH Collateral Exploit",
+      "amountLost": 1780000,
+      "chain": [
+        "Base"
+      ],
+      "summary": "Moonwell Lending lost $1.8M via cbETH Collateral Exploit on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-01T00:00:00.000Z",
+      "entity": "CrossCurve",
+      "type": "Spoofed Cross-Chain Messages",
+      "amountLost": 3000000,
+      "chain": "Unknown",
+      "summary": "CrossCurve lost $3.0M via Spoofed Cross-Chain Messages on unknown chain",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-31T00:00:00.000Z",
+      "entity": "Step Finance",
+      "type": "Private Key Compromised",
+      "amountLost": 40000000,
+      "chain": [
+        "Solana"
+      ],
+      "summary": "Step Finance lost $40.0M via Private Key Compromised on Solana",
+      "source": "DeFiLlama",
+      "classification": "Infrastructure",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-29T00:00:00.000Z",
+      "entity": "Revert Lend",
+      "type": "Staked Collateral Exploit",
+      "amountLost": 50000,
+      "chain": [
+        "Base"
+      ],
+      "summary": "Revert Lend lost $50K via Staked Collateral Exploit on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-26T00:00:00.000Z",
+      "entity": "SwapNet",
+      "type": "Unlimited Approval Exploit",
+      "amountLost": 16800000,
+      "chain": [
+        "Base",
+        "Ethereum"
+      ],
+      "summary": "SwapNet lost $16.8M via Unlimited Approval Exploit on Base,Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-25T00:00:00.000Z",
+      "entity": "Aperture LM",
+      "type": "exploit",
+      "amountLost": 3200000,
+      "chain": [
+        "Ethereum",
+        "Base",
+        "BSC"
+      ],
+      "summary": "Aperture LM lost $3.2M via unknown exploit on Ethereum,Base,BSC",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-21T00:00:00.000Z",
+      "entity": "Saga",
+      "type": "Infinite Mint and Dump",
+      "amountLost": 7000000,
+      "chain": [
+        "Saga"
+      ],
+      "summary": "Saga lost $7.0M via Infinite Mint and Dump on Saga",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-19T00:00:00.000Z",
+      "entity": "Makina",
+      "type": "Flashloan Price Oracle Attack",
+      "amountLost": 4200000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Makina lost $4.2M via Flashloan Price Oracle Attack on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-13T00:00:00.000Z",
+      "entity": "YO Protocol",
+      "type": "Slippage Exploit",
+      "amountLost": 3730000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "YO Protocol lost $3.7M via Slippage Exploit on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-08T00:00:00.000Z",
+      "entity": "Truebit",
+      "type": "Bonding Curve Exploit",
+      "amountLost": 26400000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Truebit lost $26.4M via Bonding Curve Exploit on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-07T00:00:00.000Z",
+      "entity": "Polycule",
+      "type": "exploit",
+      "amountLost": 230000,
+      "chain": [
+        "Polygon"
+      ],
+      "summary": "Polycule lost $230K via unknown exploit on Polygon",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-06T00:00:00.000Z",
+      "entity": "Fusion by IPOR",
+      "type": "EIP-7702 Delegation Exploit",
+      "amountLost": 336000,
+      "chain": [
+        "Arbitrum"
+      ],
+      "summary": "Fusion by IPOR lost $336K via EIP-7702 Delegation Exploit on Arbitrum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 336000
+    },
+    {
+      "timestamp": "2026-01-05T00:00:00.000Z",
+      "entity": "TMX TRIBE",
+      "type": "Mint & Stake Loop Exploit",
+      "amountLost": 1400000,
+      "chain": [
+        "Arbitrum"
+      ],
+      "summary": "TMX TRIBE lost $1.4M via Mint & Stake Loop Exploit on Arbitrum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-01-01T00:00:00.000Z",
+      "entity": "PRXVT",
+      "type": "Sybil Attack with CREATE2 Addresses",
+      "amountLost": 97000,
+      "chain": [
+        "Base"
+      ],
+      "summary": "PRXVT lost $97K via Sybil Attack with CREATE2 Addresses on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-30T00:00:00.000Z",
+      "entity": "Unleash Protocol",
+      "type": "Multisig Governance Hack",
+      "amountLost": 3900000,
+      "chain": [
+        "Story"
+      ],
+      "summary": "Unleash Protocol lost $3.9M via Multisig Governance Hack on Story",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-28T00:00:00.000Z",
+      "entity": "MSCST",
+      "type": "Atomic Sandwich Attack",
+      "amountLost": 129900,
+      "chain": [
+        "BSC"
+      ],
+      "summary": "MSCST lost $130K via Atomic Sandwich Attack on BSC",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-27T00:00:00.000Z",
+      "entity": "Flow",
+      "type": "mint-and-dump Hack",
+      "amountLost": 3900000,
+      "chain": [
+        "Flow"
+      ],
+      "summary": "Flow lost $3.9M via mint-and-dump Hack on Flow",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-25T00:00:00.000Z",
+      "entity": "Trust Wallet",
+      "type": "Private Key Compromised (Supply Chain Attack)",
+      "amountLost": 7000000,
+      "chain": [
+        "Ethereum",
+        "Bitcoin",
+        "Solana"
+      ],
+      "summary": "Trust Wallet lost $7.0M via Private Key Compromised (Supply Chain Attack) on Ethereum,Bitcoin,Solana",
+      "source": "DeFiLlama",
+      "classification": "Infrastructure",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-18T00:00:00.000Z",
+      "entity": "Rari Capital",
+      "type": "Uninitialized Proxy Hijack",
+      "amountLost": 2000000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Rari Capital lost $2.0M via Uninitialized Proxy Hijack on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-16T00:00:00.000Z",
+      "entity": "FutureSwap",
+      "type": "Flashloan Governance Attack",
+      "amountLost": 270000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "FutureSwap lost $270K via Flashloan Governance Attack on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-16T00:00:00.000Z",
+      "entity": "Yearn Finance",
+      "type": "misconfigured Fulcrum sUSD strategy",
+      "amountLost": 300000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Yearn Finance lost $300K via misconfigured Fulcrum sUSD strategy on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-14T00:00:00.000Z",
+      "entity": "Mars Perps",
+      "type": "Thin-Market Skew Exploit",
+      "amountLost": 960000,
+      "chain": [
+        "Neutron"
+      ],
+      "summary": "Mars Perps lost $960K via Thin-Market Skew Exploit on Neutron",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-12T00:00:00.000Z",
+      "entity": "Ribbon",
+      "type": "Private Key Compromised",
+      "amountLost": 2700000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Ribbon lost $2.7M via Private Key Compromised on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-11T00:00:00.000Z",
+      "entity": "0G Labs",
+      "type": "emergencyWithdraw Function Exploit",
+      "amountLost": 516000,
+      "chain": [
+        "0G"
+      ],
+      "summary": "0G Labs lost $516K via emergencyWithdraw Function Exploit on 0G",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2025-12-04T00:00:00.000Z",
+      "entity": "US Permissionless Dollar",
+      "type": "\"CPIMP\" proxy front-run",
+      "amountLost": 1000000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "US Permissionless Dollar lost $1.0M via \"CPIMP\" proxy front-run on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    }
+  ],
+  "meta": {
+    "sources": [
+      "DeFiLlama Hacks API",
+      "CoinGecko Markets API"
+    ],
+    "generatedBy": "crypto-contagion-tracker",
+    "version": "1.0.0"
   }
-]
+}

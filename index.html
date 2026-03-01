@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Contagion Tracker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #1a0a2e 0%, #0d1117 50%, #1a0000 100%);
+            padding: 2rem;
+            border-bottom: 1px solid #ff3333;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2rem;
+            color: #ff4444;
+            text-shadow: 0 0 20px rgba(255,68,68,0.3);
+        }
+        .header .subtitle { color: #888; margin-top: 0.5rem; font-size: 0.9rem; }
+        .dashboard {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .stat-card {
+            background: #12121a;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .stat-card .label { color: #888; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+        .stat-card .value { font-size: 2rem; font-weight: bold; margin-top: 0.5rem; }
+        .stat-card .value.danger { color: #ff4444; }
+        .stat-card .value.warning { color: #ffaa00; }
+        .stat-card .value.ok { color: #44ff44; }
+        
+        .contagion-meter {
+            background: #12121a;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .meter-bar {
+            height: 20px;
+            background: #1a1a2e;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .meter-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 1s ease;
+        }
+        .meter-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #666;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: #ff6666;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #222;
+        }
+        
+        .hacks-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        .hacks-table th {
+            text-align: left;
+            padding: 0.75rem;
+            background: #12121a;
+            color: #888;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #333;
+        }
+        .hacks-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #1a1a1a;
+            font-size: 0.9rem;
+        }
+        .hacks-table tr:hover { background: #1a1a2e; }
+        .amount-lost { color: #ff4444; font-weight: bold; }
+        .amount-returned { color: #44ff44; }
+        .chain-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #1a1a2e;
+            border: 1px solid #333;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+        .type-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #2e1a1a;
+            border: 1px solid #ff444444;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #ff8888;
+        }
+        
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        .market-card {
+            background: #12121a;
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 0.75rem;
+            font-size: 0.85rem;
+        }
+        .market-card .symbol { font-weight: bold; color: #fff; }
+        .market-card .price { color: #888; font-size: 0.8rem; }
+        .market-card .change { font-weight: bold; }
+        .change.up { color: #44ff44; }
+        .change.down { color: #ff4444; }
+        
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #444;
+            font-size: 0.8rem;
+            border-top: 1px solid #1a1a1a;
+        }
+        .footer a { color: #666; }
+        
+        .loading { text-align: center; padding: 3rem; color: #666; }
+        
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .header h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔴 Crypto Contagion Tracker</h1>
+        <div class="subtitle">Real-time monitoring of crypto security incidents & market contagion</div>
+    </div>
+    
+    <div class="dashboard">
+        <div id="stats" class="stats-grid">
+            <div class="stat-card">
+                <div class="label">Hacks (90d)</div>
+                <div class="value danger" id="hack-count">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Total Lost (90d)</div>
+                <div class="value danger" id="total-lost">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Funds Returned</div>
+                <div class="value ok" id="total-returned">—</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Market Sentiment</div>
+                <div class="value warning" id="sentiment">—</div>
+            </div>
+        </div>
+        
+        <div class="contagion-meter">
+            <div class="label" style="color:#888;font-size:0.8rem;text-transform:uppercase;letter-spacing:1px;">Contagion Score</div>
+            <div class="value" id="contagion-score" style="font-size:3rem;font-weight:bold;margin:0.5rem 0;">—</div>
+            <div class="meter-bar">
+                <div class="meter-fill" id="meter-fill" style="width:0%;background:linear-gradient(90deg,#44ff44,#ffaa00,#ff4444)"></div>
+            </div>
+            <div class="meter-labels">
+                <span>Low Risk</span>
+                <span>Moderate</span>
+                <span>High Contagion</span>
+            </div>
+        </div>
+        
+        <h2 class="section-title">📊 Market Overview (Top 20)</h2>
+        <div id="market-grid" class="market-grid">
+            <div class="loading">Loading market data...</div>
+        </div>
+        
+        <h2 class="section-title">🚨 Recent Security Incidents</h2>
+        <table class="hacks-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Protocol</th>
+                    <th>Type</th>
+                    <th>Chain</th>
+                    <th>Lost</th>
+                    <th>Returned</th>
+                </tr>
+            </thead>
+            <tbody id="hacks-body">
+                <tr><td colspan="6" class="loading">Loading incidents...</td></tr>
+            </tbody>
+        </table>
+        
+        <div id="last-updated" class="footer">
+            Data sources: <a href="https://defillama.com" target="_blank">DeFiLlama</a> · 
+            <a href="https://coingecko.com" target="_blank">CoinGecko</a><br>
+            Auto-updated weekly · Built by <a href="https://github.com/writsop/crypto-contagion-tracker">X-Money</a>
+        </div>
+    </div>
+    
+    <script>
+        function formatAmount(n) {
+            if (!n) return '$0';
+            if (n >= 1e9) return '$' + (n/1e9).toFixed(1) + 'B';
+            if (n >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+            if (n >= 1e3) return '$' + (n/1e3).toFixed(0) + 'K';
+            return '$' + n.toFixed(0);
+        }
+        
+        function formatDate(iso) {
+            return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+        
+        function getMeterColor(score) {
+            if (score < 20) return '#44ff44';
+            if (score < 50) return '#ffaa00';
+            return '#ff4444';
+        }
+        
+        async function loadData() {
+            try {
+                const res = await fetch('data/events.json');
+                const data = await res.json();
+                
+                // Update stats
+                document.getElementById('hack-count').textContent = data.summary?.totalHacks90d || 0;
+                document.getElementById('total-lost').textContent = formatAmount(data.summary?.totalLost90d || 0);
+                document.getElementById('total-returned').textContent = formatAmount(data.summary?.totalReturned90d || 0);
+                document.getElementById('sentiment').textContent = (data.summary?.marketSentiment || 'unknown').toUpperCase();
+                
+                // Contagion meter
+                const score = data.summary?.contagionScore || 0;
+                document.getElementById('contagion-score').textContent = score + '/100';
+                document.getElementById('contagion-score').style.color = getMeterColor(score);
+                document.getElementById('meter-fill').style.width = score + '%';
+                
+                // Market grid
+                if (data.market?.topTokens) {
+                    const grid = document.getElementById('market-grid');
+                    grid.innerHTML = data.market.topTokens.map(t => `
+                        <div class="market-card">
+                            <div class="symbol">${t.symbol}</div>
+                            <div class="price">$${t.price?.toLocaleString(undefined, {maximumFractionDigits: 2}) || '—'}</div>
+                            <div class="change ${(t.change24h||0) >= 0 ? 'up' : 'down'}">
+                                ${(t.change24h||0) >= 0 ? '▲' : '▼'} ${Math.abs(t.change24h||0).toFixed(1)}%
+                            </div>
+                        </div>
+                    `).join('');
+                }
+                
+                // Hacks table
+                if (data.recentHacks?.length) {
+                    const tbody = document.getElementById('hacks-body');
+                    tbody.innerHTML = data.recentHacks.map(h => `
+                        <tr>
+                            <td>${formatDate(h.timestamp)}</td>
+                            <td><strong>${h.entity}</strong></td>
+                            <td><span class="type-badge">${h.type || '—'}</span></td>
+                            <td><span class="chain-badge">${h.chain || '—'}</span></td>
+                            <td class="amount-lost">${formatAmount(h.amountLost)}</td>
+                            <td class="amount-returned">${h.returnedFunds ? formatAmount(h.returnedFunds) : '—'}</td>
+                        </tr>
+                    `).join('');
+                }
+                
+                // Last updated
+                if (data.lastUpdated) {
+                    document.getElementById('last-updated').innerHTML = 
+                        `Last updated: ${new Date(data.lastUpdated).toLocaleString()}<br>` +
+                        document.getElementById('last-updated').innerHTML;
+                }
+            } catch (err) {
+                console.error('Failed to load data:', err);
+                document.getElementById('hacks-body').innerHTML = 
+                    '<tr><td colspan="6" style="color:#ff4444">Failed to load data. Run the update script first.</td></tr>';
+            }
+        }
+        
+        loadData();
+    </script>
+</body>
+</html>
