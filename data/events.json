@@ -1,180 +1,180 @@
 {
-  "lastUpdated": "2026-03-01T12:18:31.894Z",
+  "lastUpdated": "2026-03-02T05:08:49.580Z",
   "summary": {
     "totalHacks90d": 29,
     "totalLost90d": 150258900,
     "totalReturned90d": 336000,
     "netLost90d": 149922900,
-    "contagionScore": 0,
-    "marketSentiment": "bullish"
+    "contagionScore": 68,
+    "marketSentiment": "neutral"
   },
   "market": {
-    "timestamp": "2026-03-01T12:18:31.894Z",
+    "timestamp": "2026-03-02T05:08:49.580Z",
     "topTokens": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price": 66518,
-        "change24h": 4.00731,
-        "change7d": -2.458348917726384,
-        "marketCap": 1330117266403
+        "price": 66622,
+        "change24h": -1.07672,
+        "change7d": 2.589887539602926,
+        "marketCap": 1333344515002
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price": 1985.61,
-        "change24h": 6.08562,
-        "change7d": 0.2808851199266502,
-        "marketCap": 239713125452
+        "price": 1965.4,
+        "change24h": -2.50316,
+        "change7d": 5.477025477239579,
+        "marketCap": 237212823445
       },
       {
         "symbol": "USDT",
         "name": "Tether",
-        "price": 0.999988,
-        "change24h": -0.01259,
-        "change7d": 0.02702649956360761,
-        "marketCap": 183634016784
+        "price": 0.999936,
+        "change24h": -0.01222,
+        "change7d": 0.01954319340473384,
+        "marketCap": 183622098221
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price": 622.53,
-        "change24h": 4.31833,
-        "change7d": -0.29876330655039757,
-        "marketCap": 84831138048
+        "price": 621.85,
+        "change24h": -1.32173,
+        "change7d": 5.389898155293384,
+        "marketCap": 84776636360
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price": 1.38,
-        "change24h": 6.26101,
-        "change7d": -3.3439245156330824,
-        "marketCap": 84094816094
+        "price": 1.36,
+        "change24h": -3.74452,
+        "change7d": 1.4947809680395587,
+        "marketCap": 83357086202
       },
       {
         "symbol": "USDC",
         "name": "USDC",
-        "price": 0.999964,
-        "change24h": -0.00025,
-        "change7d": 0.009272948174858199,
-        "marketCap": 75191938228
+        "price": 0.999997,
+        "change24h": 0.00588,
+        "change7d": 0.009349332140800873,
+        "marketCap": 75113119675
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price": 85.25,
-        "change24h": 7.83484,
-        "change7d": 0.015365258010294149,
-        "marketCap": 48557869292
+        "price": 84,
+        "change24h": -4.14553,
+        "change7d": 8.031785640893757,
+        "marketCap": 47854690827
       },
       {
         "symbol": "TRX",
         "name": "TRON",
-        "price": 0.280954,
-        "change24h": 0.60946,
-        "change7d": -2.643665644063696,
-        "marketCap": 26619686815
+        "price": 0.280997,
+        "change24h": -0.42593,
+        "change7d": -2.1531964534393726,
+        "marketCap": 26623892188
       },
       {
         "symbol": "FIGR_HELOC",
         "name": "Figure Heloc",
         "price": 1.029,
-        "change24h": -1.84536,
+        "change24h": 0,
         "change7d": -1.633142423092692,
-        "marketCap": 15913674381
+        "marketCap": 15908254518
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price": 0.093591,
-        "change24h": 5.13356,
-        "change7d": -3.8589192703299697,
-        "marketCap": 15805301290
+        "price": 0.0929,
+        "change24h": -3.55672,
+        "change7d": 0.0059543175119847426,
+        "marketCap": 15714130375
       },
       {
         "symbol": "WBT",
         "name": "WhiteBIT Coin",
-        "price": 49.41,
-        "change24h": 2.97784,
-        "change7d": -2.679027728141066,
-        "marketCap": 10544119324
-      },
-      {
-        "symbol": "ADA",
-        "name": "Cardano",
-        "price": 0.278567,
-        "change24h": 5.76426,
-        "change7d": 0.8788466071287868,
-        "marketCap": 10248442225
+        "price": 49.02,
+        "change24h": -2.09379,
+        "change7d": 0.7018146486717703,
+        "marketCap": 10468045144
       },
       {
         "symbol": "USDS",
         "name": "USDS",
-        "price": 0.99992,
-        "change24h": 0.01786,
-        "change7d": -0.005224310550624427,
-        "marketCap": 10099175812
+        "price": 0.999955,
+        "change24h": -0.00044,
+        "change7d": 0.0029785068001221384,
+        "marketCap": 10131741529
+      },
+      {
+        "symbol": "ADA",
+        "name": "Cardano",
+        "price": 0.274987,
+        "change24h": -3.82025,
+        "change7d": 5.242726949231969,
+        "marketCap": 10128722439
       },
       {
         "symbol": "BCH",
         "name": "Bitcoin Cash",
-        "price": 447.33,
-        "change24h": 0.40563,
-        "change7d": -21.336948364808293,
-        "marketCap": 8932619579
+        "price": 448.99,
+        "change24h": -2.17215,
+        "change7d": -16.94310532718151,
+        "marketCap": 8981228426
       },
       {
         "symbol": "LEO",
         "name": "LEO Token",
-        "price": 9.14,
-        "change24h": 3.53205,
-        "change7d": 11.553772166967018,
-        "marketCap": 8358788305
+        "price": 9.07,
+        "change24h": 1.00264,
+        "change7d": 11.772706019946494,
+        "marketCap": 8356302670
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "price": 30.94,
-        "change24h": 13.35354,
-        "change7d": 4.183064979963512,
-        "marketCap": 7410064512
+        "price": 31.15,
+        "change24h": 0.81189,
+        "change7d": 14.330332699501575,
+        "marketCap": 7451218653
       },
       {
         "symbol": "XMR",
         "name": "Monero",
-        "price": 341.8,
-        "change24h": 4.57517,
-        "change7d": 5.8421731797854655,
-        "marketCap": 6302469153
+        "price": 345.15,
+        "change24h": 0.41785,
+        "change7d": 10.304308782372543,
+        "marketCap": 6369344545
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price": 8.89,
-        "change24h": 6.97138,
-        "change7d": 0.6679228788249856,
-        "marketCap": 6288356967
+        "price": 8.77,
+        "change24h": -3.2215,
+        "change7d": 6.240387407782288,
+        "marketCap": 6214682778
       },
       {
         "symbol": "CC",
         "name": "Canton",
-        "price": 0.165409,
-        "change24h": 2.03621,
-        "change7d": 3.429458689313078,
-        "marketCap": 6272018423
+        "price": 0.159015,
+        "change24h": -5.55235,
+        "change7d": -0.9186302261131757,
+        "marketCap": 6032618787
       },
       {
         "symbol": "USDE",
         "name": "Ethena USDe",
-        "price": 0.99924,
-        "change24h": -0.00628,
-        "change7d": 0.04026757787468105,
-        "marketCap": 6030643090
+        "price": 0.999186,
+        "change24h": -0.00143,
+        "change7d": -0.0021118138657267205,
+        "marketCap": 6025420427
       }
     ],
-    "contagionScore": 0,
-    "marketSentiment": "bullish",
-    "avgChange24h": 3.6
+    "contagionScore": 68,
+    "marketSentiment": "neutral",
+    "avgChange24h": -1.57
   },
   "recentHacks": [
     {
