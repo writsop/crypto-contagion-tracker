@@ -1,182 +1,249 @@
 {
-  "lastUpdated": "2026-03-02T05:08:49.580Z",
+  "lastUpdated": "2026-03-09T05:12:50.056Z",
   "summary": {
-    "totalHacks90d": 29,
-    "totalLost90d": 150258900,
+    "totalHacks90d": 30,
+    "totalLost90d": 150180900,
     "totalReturned90d": 336000,
-    "netLost90d": 149922900,
-    "contagionScore": 68,
+    "netLost90d": 149844900,
+    "contagionScore": 0,
     "marketSentiment": "neutral"
   },
   "market": {
-    "timestamp": "2026-03-02T05:08:49.580Z",
+    "timestamp": "2026-03-09T05:12:50.056Z",
     "topTokens": [
       {
         "symbol": "BTC",
         "name": "Bitcoin",
-        "price": 66622,
-        "change24h": -1.07672,
-        "change7d": 2.589887539602926,
-        "marketCap": 1333344515002
+        "price": 67146,
+        "change24h": 0.27146,
+        "change7d": 0.5263831652474255,
+        "marketCap": 1343658648842
       },
       {
         "symbol": "ETH",
         "name": "Ethereum",
-        "price": 1965.4,
-        "change24h": -2.50316,
-        "change7d": 5.477025477239579,
-        "marketCap": 237212823445
+        "price": 1979.9,
+        "change24h": 1.83133,
+        "change7d": 0.3859592863623023,
+        "marketCap": 239053603033
       },
       {
         "symbol": "USDT",
         "name": "Tether",
-        "price": 0.999936,
-        "change24h": -0.01222,
-        "change7d": 0.01954319340473384,
-        "marketCap": 183622098221
+        "price": 0.999892,
+        "change24h": -0.00678,
+        "change7d": -0.006689883961531045,
+        "marketCap": 183886013840
       },
       {
         "symbol": "BNB",
         "name": "BNB",
-        "price": 621.85,
-        "change24h": -1.32173,
-        "change7d": 5.389898155293384,
-        "marketCap": 84776636360
+        "price": 622.93,
+        "change24h": 0.93911,
+        "change7d": 6.16433943629073e-7,
+        "marketCap": 85004224742
       },
       {
         "symbol": "XRP",
         "name": "XRP",
-        "price": 1.36,
-        "change24h": -3.74452,
-        "change7d": 1.4947809680395587,
-        "marketCap": 83357086202
+        "price": 1.34,
+        "change24h": -0.3954,
+        "change7d": -1.6281131826705726,
+        "marketCap": 82342468968
       },
       {
         "symbol": "USDC",
         "name": "USDC",
-        "price": 0.999997,
-        "change24h": 0.00588,
-        "change7d": 0.009349332140800873,
-        "marketCap": 75113119675
+        "price": 0.999948,
+        "change24h": 0.00391,
+        "change7d": 0.004522383079792803,
+        "marketCap": 77202450641
       },
       {
         "symbol": "SOL",
         "name": "Solana",
-        "price": 84,
-        "change24h": -4.14553,
-        "change7d": 8.031785640893757,
-        "marketCap": 47854690827
+        "price": 83.31,
+        "change24h": 1.32129,
+        "change7d": -1.0565766391320865,
+        "marketCap": 47528141998
       },
       {
         "symbol": "TRX",
         "name": "TRON",
-        "price": 0.280997,
-        "change24h": -0.42593,
-        "change7d": -2.1531964534393726,
-        "marketCap": 26623892188
+        "price": 0.289085,
+        "change24h": 0.93269,
+        "change7d": 2.8487752617602493,
+        "marketCap": 27387929832
       },
       {
         "symbol": "FIGR_HELOC",
         "name": "Figure Heloc",
-        "price": 1.029,
-        "change24h": 0,
-        "change7d": -1.633142423092692,
-        "marketCap": 15908254518
+        "price": 1.024,
+        "change24h": null,
+        "change7d": -0.5141449131421939,
+        "marketCap": 16026442234
       },
       {
         "symbol": "DOGE",
         "name": "Dogecoin",
-        "price": 0.0929,
-        "change24h": -3.55672,
-        "change7d": 0.0059543175119847426,
-        "marketCap": 15714130375
+        "price": 0.090447,
+        "change24h": 1.36449,
+        "change7d": -2.860650487057253,
+        "marketCap": 13870522594
       },
       {
         "symbol": "WBT",
         "name": "WhiteBIT Coin",
-        "price": 49.02,
-        "change24h": -2.09379,
-        "change7d": 0.7018146486717703,
-        "marketCap": 10468045144
+        "price": 53.95,
+        "change24h": 0.73494,
+        "change7d": 9.916462877744893,
+        "marketCap": 11511465975
       },
       {
         "symbol": "USDS",
         "name": "USDS",
-        "price": 0.999955,
-        "change24h": -0.00044,
-        "change7d": 0.0029785068001221384,
-        "marketCap": 10131741529
+        "price": 0.999992,
+        "change24h": 0.00072,
+        "change7d": 0.00567014512446502,
+        "marketCap": 11047486555
       },
       {
         "symbol": "ADA",
         "name": "Cardano",
-        "price": 0.274987,
-        "change24h": -3.82025,
-        "change7d": 5.242726949231969,
-        "marketCap": 10128722439
+        "price": 0.253228,
+        "change24h": 0.77685,
+        "change7d": -8.228604569223878,
+        "marketCap": 9335754120
       },
       {
         "symbol": "BCH",
         "name": "Bitcoin Cash",
-        "price": 448.99,
-        "change24h": -2.17215,
-        "change7d": -16.94310532718151,
-        "marketCap": 8981228426
+        "price": 449.37,
+        "change24h": 0.16049,
+        "change7d": 0.06515776075625486,
+        "marketCap": 8991236284
       },
       {
         "symbol": "LEO",
         "name": "LEO Token",
-        "price": 9.07,
-        "change24h": 1.00264,
-        "change7d": 11.772706019946494,
-        "marketCap": 8356302670
+        "price": 9.06,
+        "change24h": 0.28758,
+        "change7d": -0.13238199549393426,
+        "marketCap": 8344893732
       },
       {
         "symbol": "HYPE",
         "name": "Hyperliquid",
-        "price": 31.15,
-        "change24h": 0.81189,
-        "change7d": 14.330332699501575,
-        "marketCap": 7451218653
+        "price": 30.71,
+        "change24h": 2.32424,
+        "change7d": -2.20454393477152,
+        "marketCap": 7334285263
       },
       {
         "symbol": "XMR",
         "name": "Monero",
-        "price": 345.15,
-        "change24h": 0.41785,
-        "change7d": 10.304308782372543,
-        "marketCap": 6369344545
+        "price": 341.9,
+        "change24h": 0.0907,
+        "change7d": -1.1519522385561043,
+        "marketCap": 6309563988
       },
       {
         "symbol": "LINK",
         "name": "Chainlink",
-        "price": 8.77,
-        "change24h": -3.2215,
-        "change7d": 6.240387407782288,
-        "marketCap": 6214682778
-      },
-      {
-        "symbol": "CC",
-        "name": "Canton",
-        "price": 0.159015,
-        "change24h": -5.55235,
-        "change7d": -0.9186302261131757,
-        "marketCap": 6032618787
+        "price": 8.7,
+        "change24h": 1.42288,
+        "change7d": -1.2339064867537886,
+        "marketCap": 6160420266
       },
       {
         "symbol": "USDE",
         "name": "Ethena USDe",
-        "price": 0.999186,
-        "change24h": -0.00143,
-        "change7d": -0.0021118138657267205,
-        "marketCap": 6025420427
+        "price": 0.999402,
+        "change24h": 0.01084,
+        "change7d": 0.021595406361654263,
+        "marketCap": 5937047852
+      },
+      {
+        "symbol": "CC",
+        "name": "Canton",
+        "price": 0.149947,
+        "change24h": -1.88252,
+        "change7d": -5.789576074384086,
+        "marketCap": 5698383914
       }
     ],
-    "contagionScore": 68,
+    "contagionScore": 0,
     "marketSentiment": "neutral",
-    "avgChange24h": -1.57
+    "avgChange24h": 0.51
   },
   "recentHacks": [
+    {
+      "timestamp": "2026-03-07T00:00:00.000Z",
+      "entity": "Molt EVM",
+      "type": "onlySpawnerToken Modifier Hack",
+      "amountLost": 127000,
+      "chain": [
+        "Base"
+      ],
+      "summary": "Molt EVM lost $127K via onlySpawnerToken Modifier Hack on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-03-06T00:00:00.000Z",
+      "entity": "SolvBTC",
+      "type": "Mint Reserves Logic Exploit",
+      "amountLost": 2700000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "SolvBTC lost $2.7M via Mint Reserves Logic Exploit on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-03-02T00:00:00.000Z",
+      "entity": "Curve LlamaLend",
+      "type": "Donation Attack",
+      "amountLost": 240000,
+      "chain": [
+        "Ethereum"
+      ],
+      "summary": "Curve LlamaLend lost $240K via Donation Attack on Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-03-02T00:00:00.000Z",
+      "entity": "FOOM Cash",
+      "type": "Fake Proof Spam",
+      "amountLost": 2260000,
+      "chain": [
+        "Ethereum",
+        "Base"
+      ],
+      "summary": "FOOM Cash lost $2.3M via Fake Proof Spam on Ethereum,Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-28T00:00:00.000Z",
+      "entity": "Wise Lending V2",
+      "type": "Flashloan Exploit",
+      "amountLost": 66000,
+      "chain": [
+        "Arbitrum",
+        "Ethereum"
+      ],
+      "summary": "Wise Lending V2 lost $66K via Flashloan Exploit on Arbitrum,Ethereum",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
+      "returnedFunds": 0
+    },
     {
       "timestamp": "2026-02-26T00:00:00.000Z",
       "entity": "Ploutos Money",
@@ -227,6 +294,19 @@
       "summary": "IoTeX lost $8.0M via Private Key Compromised on Ethereum",
       "source": "DeFiLlama",
       "classification": "Infrastructure",
+      "returnedFunds": 0
+    },
+    {
+      "timestamp": "2026-02-21T00:00:00.000Z",
+      "entity": "Veil Cash",
+      "type": "misconfigured Groth16 verifier",
+      "amountLost": 5000,
+      "chain": [
+        "Base"
+      ],
+      "summary": "Veil Cash lost $5K via misconfigured Groth16 verifier on Base",
+      "source": "DeFiLlama",
+      "classification": "Protocol Logic",
       "returnedFunds": 0
     },
     {
@@ -488,71 +568,6 @@
         "Ethereum"
       ],
       "summary": "FutureSwap lost $270K via Flashloan Governance Attack on Ethereum",
-      "source": "DeFiLlama",
-      "classification": "Protocol Logic",
-      "returnedFunds": 0
-    },
-    {
-      "timestamp": "2025-12-16T00:00:00.000Z",
-      "entity": "Yearn Finance",
-      "type": "misconfigured Fulcrum sUSD strategy",
-      "amountLost": 300000,
-      "chain": [
-        "Ethereum"
-      ],
-      "summary": "Yearn Finance lost $300K via misconfigured Fulcrum sUSD strategy on Ethereum",
-      "source": "DeFiLlama",
-      "classification": "Protocol Logic",
-      "returnedFunds": 0
-    },
-    {
-      "timestamp": "2025-12-14T00:00:00.000Z",
-      "entity": "Mars Perps",
-      "type": "Thin-Market Skew Exploit",
-      "amountLost": 960000,
-      "chain": [
-        "Neutron"
-      ],
-      "summary": "Mars Perps lost $960K via Thin-Market Skew Exploit on Neutron",
-      "source": "DeFiLlama",
-      "classification": "Protocol Logic",
-      "returnedFunds": 0
-    },
-    {
-      "timestamp": "2025-12-12T00:00:00.000Z",
-      "entity": "Ribbon",
-      "type": "Private Key Compromised",
-      "amountLost": 2700000,
-      "chain": [
-        "Ethereum"
-      ],
-      "summary": "Ribbon lost $2.7M via Private Key Compromised on Ethereum",
-      "source": "DeFiLlama",
-      "classification": "Protocol Logic",
-      "returnedFunds": 0
-    },
-    {
-      "timestamp": "2025-12-11T00:00:00.000Z",
-      "entity": "0G Labs",
-      "type": "emergencyWithdraw Function Exploit",
-      "amountLost": 516000,
-      "chain": [
-        "0G"
-      ],
-      "summary": "0G Labs lost $516K via emergencyWithdraw Function Exploit on 0G",
-      "source": "DeFiLlama",
-      "classification": "Protocol Logic",
-      "returnedFunds": 0
-    },
-    {
-      "timestamp": "2025-12-04T00:00:00.000Z",
-      "entity": "US Permissionless Dollar",
-      "type": "\"CPIMP\" proxy front-run",
-      "amountLost": 1000000,
-      "chain": [
-        "Ethereum"
-      ],
-      "summary": "US Permissionless Dollar lost $1.0M via \"CPIMP\" proxy front-run on Ethereum",
       "source": "DeFiLlama",
       "classification": "Protocol Logic",
       "returnedFunds": 0
